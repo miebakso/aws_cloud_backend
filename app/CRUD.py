@@ -68,6 +68,7 @@ def get_posts(db: Session, popular: bool):
                     post_id,
                     count(user_id) as likes
                 FROM likes
+                GROUP BY post_id
             ) AS L 
             ON 
                 L.post_id = P.id
@@ -106,6 +107,7 @@ def get_posts(db: Session, popular: bool):
                     post_id,
                     count(user_id) as likes
                 FROM likes
+                GROUP BY post_id
             ) AS L 
             ON 
                 L.post_id = P.id
@@ -146,6 +148,7 @@ def get_post(db: Session, post_id: int):
                 post_id,
                 count(user_id) as likes
             FROM likes
+            WHERE post_id = {post_id}
         ) AS L 
         ON 
             L.post_id = P.id

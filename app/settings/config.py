@@ -8,9 +8,9 @@ class Settings(BaseSettings):
     DB_USERNAME: str = "admin" 
     DB_PASSWORD: str = "abcd1234"
     DB_NAME: str = "stockforum"
-    aws_access_key_id='ASIAVY4INUFHL6GPHP5D'
-    aws_secret_access_key='Y1Hk8Pv1fIlmaI6Pl/ObZE5csOTL4rmKUlQve5ff'
-    aws_session_token='FwoGZXIvYXdzEM3//////////wEaDJeLEM7QcTHwZ+b2eiLNAdGLteMqWsNn92U/5ijpQ4PtvgJqOZ8z33kvlocI301pvgN6wWHkwKsVdRvO7oxSmqX8h4KpBK83JV73WttjBlmN43TjSKheiv2mC1+oC9EL4fCuOeM68s3dCK+j1OCSqDb162OFT2t8FM/ACR9Joytklrnmr8QiSF/2a5iOF4CXSxbxHKp6QjURieB2nUtGceiis+qJsMBOg8pr54bsbiEi9Byz2jNhRZL1Az9wNRsGXAOlmLyWH/gw0y7CIK6UDXk4M500FwBjC7m/81Move2UkwYyLZfCAfrkwMueGJmF6jYel1ZZcBaVg3ivr3LI6WWCsBw4UOABQw2Jm67emETokw=='
+    aws_access_key_id='ASIAVY4INUFHFH6KHGXV'
+    aws_secret_access_key='9SswgP/jeDGpUx9biQNzBOTTXqRZFx7pMvxTG7zL'
+    aws_session_token='FwoGZXIvYXdzEG0aDDdtZFHD0PiYyT6v/SLNAXsh2RUwDTvrGhZfdn6/rrdLOfazCsrMydMMy3eUGCxhl/61GbW+gU9XPgukOjC9N7W2aezVGDDDAUsXE8t69PW/MPKBG13oNapR/lKI0bskpboVoNJSXU8+tN/bfPiNqf4g7QSfUC1FpN5qt9xXoW5twTAxf8dgItGUj9nFCPwfqG/OIT7p92Tk9nQ5CPdiHvdGuBnCMKPD9RjtNqY/fIu5YJG61XRxvIer+m4KMFuxscrSxF/bE2KzZKf7oJ2u/Iuq0n+82pSVzk1GhuMop/m3kwYyLUoLPsMuXuKDv8OGcQXAMz5kpc4QPGn5BOx6lqon9pJyQ5Zau1JAOqYLjZ6hDQ=='
     AWS_BUCKET_NAME = "miebakso"
     
 @lru_cache()

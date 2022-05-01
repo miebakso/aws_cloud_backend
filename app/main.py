@@ -172,10 +172,10 @@ async def update_post(title: str = Form(...), file: Optional[UploadFile] = File(
 
 @app.get("/user/has/like")
 async def has_like(post_id: int, user_id:int, dbb: Session = Depends(db.get_db)):
-    has_like =  CRUD.post_liked_by_user(db, post_id, user_id)
-    if len(has_like) == 1:
-        return True
-    return False
+    has_like =  CRUD.post_liked_by_user(dbb, post_id, user_id)
+    if has_like is None:
+        return False
+    return True
 
 
 
