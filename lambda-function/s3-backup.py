@@ -21,19 +21,12 @@ def lambda_handler(event, context):
         bucket2 = s3.Bucket('stockforum')
         bucket2.copy(copy_source, key)
         body['list_backup_object'].append(key)
-    # copy_source = {
-    #     'Bucket': 'miebakso',
-    #     'Key': 'image1.png'
-    # }
-    # bucket2 = s3.Bucket('stockforum')
-    # bucket2.copy(copy_source, 'image1.png')
-    # body['list_backup_object'].append(key)
-
-    print(body)
     body['status'] = 'Backup complete!'
     return {
         'statusCode': 200,
         'headers': {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET',
         	'Content-Type': 'application.json'
         },
         'statusCode': 200,
